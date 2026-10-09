@@ -38,3 +38,24 @@ button{margin:5px 5px 15px;}
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   max-height: 90vh; /* opcional, ajusta altura vertical */
 }
+
+
+/* ==== Responsividade para celular ===== */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 92%;            /* ocupa maioria da tela */
+    padding: 15px;        /* diminui espaçamento interno */
+    max-height: 95vh;      /* evita excesso de rolagem */
+  }
+  body, h1, label, input, button {
+    font-size: 0.9em;     /* tamanho de texto mais pequeno */
+  }
+  input, button {
+    width: 100%;          /* ocupa largura completa */
+  }
+  button {
+    margin: 8px 0;        /* espaçamento mais leve */
+  }
+}
+
+
