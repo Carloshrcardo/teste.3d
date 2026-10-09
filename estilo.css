@@ -39,25 +39,24 @@ button{margin:5px 5px 15px;}
   max-height: 90vh; /* opcional, ajusta altura vertical */
 }
 
-
 /* ==== Responsividade para celular ===== */
 @media (max-width: 480px) {
   .wrapper {
-    width: 96%;            /* ocupa autonomia reduzindo margens */
-    padding: 15px;        /* diminui espaçamento interno */
-    max-height: 100vh;      /* aumenta altura na versão móvel para 100% da tela */
-    overflow-y: auto;     /* permite rolear se precisar */
+    width: 98%;            /* maior largura na tela móvel */
+    padding: 30px;        /* mais espaçamento interno */
+    border: none;         /* remove borda na versão móvel */
+    border-radius: 0;     /* remove cantos arredondados na versão móvel */
+  }
   }
   body, h1, label, input, button {
-    font-size: 0.9em;     /* tamanho de texto mais pequeno */
+    font-size: 1.1em;     /* tamanho de texto mais grande */
   }
   input, button {
     width: 100%;          /* ocupa largura completa */
+    height: 45px;         /* aumenta tamanho dos campos */
   }
   button {
     margin: 8px 0;        /* espaçamento mais leve */
   }
-}
-
 
 
