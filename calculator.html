@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora de Orçamento 3D</title>
+
+  <link rel="stylesheet" href="estilo.css">
+
+  <!-- script estará na mesma pasta -->
+  <script src="calculos.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+  <h1>Calculadora de Orçamento 3D</h1>
+
+  <div>
+    <label>Nome da peça:<br>
+      <input type="text" id="name" placeholder="Nome">
+    </label>
+  </div>
+
+  <div>
+    <label>Peso (g):<br>
+      <input type="number" id="weight" min="0">
+    </label>
+  </div>
+
+  <div>
+    <label>Tempo (h:m):<br>
+      <input type="text" id="time" placeholder="HH:MM">
+    </label>
+  </div>
+
+  <div>
+    <button onclick="enviarWhatsApp('5547988048903')">Pai</button>
+    <button onclick="enviarWhatsApp('5547988048903')">Mãe</button>
+  </div>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <div id="result"></div>
+
+</div>
+</body>
+</html>
+
