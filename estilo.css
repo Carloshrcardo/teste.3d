@@ -38,6 +38,7 @@ button{margin:5px 5px 15px;}
 }
 
 /* ==== Responsividade para celular ===== */
+.wrapper { width:96%; padding:15px; margin:0 auto; }
 @media (max-width: 480px) {
   .wrapper {
     width: 98%;            /* maior largura na tela móvel */
