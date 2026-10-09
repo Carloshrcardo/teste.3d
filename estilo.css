@@ -72,7 +72,14 @@ button{margin:5px 5px 15px;}
 .wrapper input, .wrapper button {
   width: 100%;
   max-width: 500px;
-  padding: 12px;
-  font-size: 1.1em;
+  padding: 15px 20px;
+  font-size: 1.2em;
   box-sizing: border-box;
+}
+/* Tamanho aumentado de todos os elementos dentro .wrapper */
+.wrapper {
+  font-size: 2.2em;
+}
+.wrapper button {
+  white-space: normal;
 }
