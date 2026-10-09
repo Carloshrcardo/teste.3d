@@ -1,5 +1,3 @@
-// calculos.js – Funções que ficam no arquivo externo
-
 const params = {
   cfil: 129.83,
   energia_h: 0.40,
@@ -8,7 +6,14 @@ const params = {
   margem_perc: 200
 };
 
-// Cálculo do orçamento
+function resetCalcState(){
+  const btnCalc = document.getElementById('btnCalc');
+  if(btnCalc){ btnCalc.style.display = 'inline-block'; }
+  const btnEn = document.getElementById('btnEnviar');
+  if(btnEn){ btnEn.style.display = 'none'; }
+  document.getElementById('result').innerHTML = '';
+}
+
 function calcular(){
   const weightG = parseFloat(document.getElementById('weight').value) || 0;
   const timeStr = document.getElementById('time').value;
@@ -33,9 +38,14 @@ function calcular(){
     <p>Peso: ${weightG} g</p>
     <p>Tempo: ${timeH.toFixed(2)} h</p>
     <p>Preço: R$ ${precoF.toFixed(2)}</p>`;
+  // Mostrar botão de enviar após cálculo
+  const btnEn = document.getElementById('btnEnviar');
+  if(btnEn){ btnEn.style.display = 'inline-block'; }
+  // Ocultar botão de calcular
+  const btnCalc = document.getElementById('btnCalc');
+  if(btnCalc){ btnCalc.style.display = 'none'; }
 }
 
-// Envio para WhatsApp
 function enviarWhatsApp(recNum){
   const name = document.getElementById('name').value;
   const peso = document.getElementById('weight').value;
@@ -47,4 +57,5 @@ function enviarWhatsApp(recNum){
   const url = `https://wa.me/${num}?text=${encodeURIComponent(msg)}`;
 
   window.open(url, '_blank');
+  resetCalcState();
 }
