@@ -45,7 +45,7 @@ button{margin:5px 5px 15px;}
   .wrapper {
     width: 96%;            /* ocupa autonomia reduzindo margens */
     padding: 15px;        /* diminui espaçamento interno */
-    max-height: 70vh;      /* altura reduzida para mobile */
+    max-height: 90vh;      /* aumenta altura na versão móvel */
   }
   body, h1, label, input, button {
     font-size: 0.9em;     /* tamanho de texto mais pequeno */
