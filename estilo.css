@@ -35,7 +35,7 @@ button{margin:5px 5px 15px;}
   color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  max-height: 90vh; /* opcional, ajusta altura vertical */
+  min-height: 90vh; /* maior tamanho vertical */
 }
 
 /* ==== Responsividade para celular ===== */
@@ -60,3 +60,19 @@ button{margin:5px 5px 15px;}
   }
 
 
+@media (max-width:480px) {
+  .wrapper { width: 100% !important; padding: 0 !important; }
+  h1 { font-size: 1.6em !important; }
+  label, input, button { font-size: 1.2em !important; }
+}
+@media (max-width:480px) {
+  .wrapper { height: 100vh !important; }
+}
+/* Campos responsivos em todos os dispositivos */
+.wrapper input, .wrapper button {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+}
