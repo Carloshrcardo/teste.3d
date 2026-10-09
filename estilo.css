@@ -31,7 +31,8 @@ button{margin:5px 5px 15px;}
   margin: 0 auto;
   /* Espaçamento interno opcional */
   padding: 20px;
-  background: #ffffff;
+  background: rgba(0,0,128,0.8);
+  color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   max-height: 90vh; /* opcional, ajusta altura vertical */
