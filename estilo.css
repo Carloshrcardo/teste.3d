@@ -53,10 +53,11 @@ button{margin:5px 5px 15px;}
   }
   input, button {
     width: 100%;          /* ocupa largura completa */
-    height: 45px;         /* aumenta tamanho dos campos */
+    height: 9%;         /* aumenta tamanho dos campos */
   }
   button {
-    margin: 8px 0;        /* espaçamento mais leve */
+  margin: 8px 0;      /* espaçamento mais leve */
+    
   }
 
 
@@ -72,8 +73,9 @@ button{margin:5px 5px 15px;}
 .wrapper input, .wrapper button {
   width: 100%;
   max-width: 500px;
-  padding: 15px 20px;
-  font-size: 1.2em;
+  padding: 20px 20px;
+-  font-size: 1.2em !important;
++  font-size: 1.4em !important;
   box-sizing: border-box;
 }
 /* Tamanho aumentado de todos os elementos dentro .wrapper */
@@ -82,4 +84,18 @@ button{margin:5px 5px 15px;}
 }
 .wrapper button {
   white-space: normal;
+}
+.wrapper button {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  white-space: normal;
+}
+.wrapper button {
+  font-size: 1.2em;
+}
+.send-btn {
+ font-size: 1.4em !important;
+ padding: 20px 20px;
+ height: 80%;
 }
