@@ -43,9 +43,9 @@ button{margin:5px 5px 15px;}
 /* ==== Responsividade para celular ===== */
 @media (max-width: 480px) {
   .wrapper {
-    width: 92%;            /* ocupa maioria da tela */
+    width: 96%;            /* ocupa autonomia reduzindo margens */
     padding: 15px;        /* diminui espaçamento interno */
-    max-height: 95vh;      /* evita excesso de rolagem */
+    max-height: 70vh;      /* altura reduzida para mobile */
   }
   body, h1, label, input, button {
     font-size: 0.9em;     /* tamanho de texto mais pequeno */
@@ -57,5 +57,6 @@ button{margin:5px 5px 15px;}
     margin: 8px 0;        /* espaçamento mais leve */
   }
 }
+
 
 
