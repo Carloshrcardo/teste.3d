@@ -17,28 +17,27 @@
 
   <div>
     <label>Nome da peça:<br>
-      <input type="text" id="name" placeholder="Nome">
+      <input type="text" id="name" placeholder="Nome" oninput="resetCalcState()">
     </label>
   </div>
 
   <div>
     <label>Peso (g):<br>
-      <input type="number" id="weight" min="0">
+      <input type="number" id="weight" min="0" oninput="resetCalcState()">
     </label>
   </div>
 
   <div>
     <label>Tempo (h:m):<br>
-      <input type="text" id="time" placeholder="HH:MM">
+      <input type="text" id="time" placeholder="HH:MM" oninput="resetCalcState()">
     </label>
   </div>
 
   <div>
-    <button onclick="enviarWhatsApp('5547988048903')">Pai</button>
-    <button onclick="enviarWhatsApp('5547988048903')">Mãe</button>
+    <button id="btnEnviar" onclick="enviarWhatsApp('5547988048903')" style="display:none;">Enviar</button>
   </div>
 
-  <button onclick="calcular()">Calcular</button>
+  <button id="btnCalc" onclick="calcular()">Calcular</button>
 
   <div id="result"></div>
 
