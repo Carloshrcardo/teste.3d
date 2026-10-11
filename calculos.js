@@ -31,13 +31,15 @@ function calcular(){
                     (timeH * params.energia_h) +
                     (timeH * params.depreca_o_h);
   const subtotalLoss = subtotal * (1 + params.perdas_perc/100);
-  const precoF = subtotalLoss * (1 + params.margem_perc/100);
+  const preco200 = subtotalLoss * (1 + params.margem_perc/100);
+  const preco100 = subtotalLoss * (1 + 1.0);
 
   document.getElementById('result').innerHTML = `
     <p>Nome: ${document.getElementById('name').value}</p>
     <p>Peso: ${weightG} g</p>
     <p>Tempo: ${timeH.toFixed(2)} h</p>
-    <p>Preço: R$ ${precoF.toFixed(2)}</p>`;
+    <p>Preço 100%: R$ ${preco100.toFixed(2)}</p>
+    <p>Preço 200%: R$ ${preco200.toFixed(2)}</p>`;  
   // Mostrar botão de enviar após cálculo
   const btnEn = document.getElementById('btnEnviar');
   if(btnEn){ btnEn.style.display = 'inline-block'; }
