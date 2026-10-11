@@ -53,7 +53,7 @@ button{margin:5px 5px 15px;}
   }
   input, button {
     width: 100%;          /* ocupa largura completa */
-    height: 9%;         /* aumenta tamanho dos campos */
+   /* height: 9%;         /* aumenta tamanho dos campos */
   }
   button {
   margin: 12px 0;      /* espaçamento mais leve */
